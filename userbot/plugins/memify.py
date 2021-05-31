@@ -57,7 +57,8 @@ async def memes(cat):
     san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     if catinput:
         if ";" in catinput:
-            top, bottom = catinput.split(";", 1)
+            top, bottom = catinput.split(":", 1)
+                                           
         else:
             top = catinput
             bottom = ""
